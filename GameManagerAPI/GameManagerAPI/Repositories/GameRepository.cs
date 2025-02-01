@@ -10,7 +10,6 @@ namespace GameManagerAPI.Repositories
     {
         private readonly IMongoCollection<Game> _gamesCollection;
 
-        // Constructor to initialize MongoDB collection
         public GameRepository(IMongoDatabase database)
         {
             _gamesCollection = database.GetCollection<Game>("Games");
